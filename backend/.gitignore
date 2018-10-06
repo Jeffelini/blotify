@@ -1,22 +1,28 @@
-## BASE – System Files – Mac OS X:
+## Application:
+## Secrets
+.env
+
+## System Files:
+## macOS
 .DS_Store
 .DS_Store?
 *.swp
 
-## BASE – System Files – Windows:
+## Windows
 Thumbs.db
+
 
 ## Node:
 node_modules/
 npm-debug.log
 yarn-error.log
 
-## Node – Output:
 /dist/
 /out/
 /build/
 
-## IDE - VSCode:
+
+## VSCode:
 .vscode/
 !.vscode/settings.json
 !.vscode/tasks.json

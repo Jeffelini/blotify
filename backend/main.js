@@ -1,4 +1,10 @@
-const getPort = require("get-port");
+// Read the .env file in the current working directory.
+const dotenv = require("dotenv");
+
+// Configure the program environment from the .env in the current working
+// directory.
+const result = dotenv.config();
+if (result.error) console.error(`Failed to load dotenv: ${result.error}`);
 
 const server = require("./src/server");
 
