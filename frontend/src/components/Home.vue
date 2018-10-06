@@ -17,13 +17,40 @@ export default {
 </script>
 
 <style style lang="scss" scoped>
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 #welcome {
   display: flex;
   flex-direction: column;
-  //   flex-wrap: nowrap;
+  flex-wrap: nowrap;
   justify-content: center;
   min-height: 100vh;
   align-items: center;
+}
+
+h1 {
+  opacity: 0;
+
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+h3 {
+  opacity: 0;
+
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
 }
 
 button {
@@ -36,6 +63,13 @@ button {
   padding: 15px 25px;
   border-radius: 4px;
   width: 200px;
+  opacity: 0;
+  margin-top: 20px;
+
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
 }
 
 button:hover {
